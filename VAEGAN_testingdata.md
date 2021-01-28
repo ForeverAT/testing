@@ -149,7 +149,7 @@ loss_discriminator=2*criterion_GAN(o_logit1,r_label)+criterion_GAN(r_logit1,f_la
 ```
 
 # Test 3
-attempt: reduce latent dim to 100, increase image dimension to 128*128
+attempt: increase learning rate of the discriminator and added weight decay for the discriminator. Increased image dimension into 128x128. Model structure slightly change due to the image dimension change.
 
 ```
 loss_encoder=criterion_VAE(real_imgs,imgs)+2*kld
@@ -160,5 +160,5 @@ Epoch 20
 ![](image/2021-01-28-18-25-55.png)
 
 # Test 4
-reduce the weight of discriminator in generator
+reduce the weight of discriminator in generator loss function. Reduced latent dim to 100
 
