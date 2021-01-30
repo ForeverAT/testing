@@ -296,3 +296,7 @@ conclusion: dicriminator loss toward generator still too high (50:1). Some image
 
 # Test 5
 Target epoch 30, reduce the discriminator loss to ratio (100:1)
+
+result:run till 16 epoch rejected by Google, reason(limited usage)
+observation: generator still highly affected by discriminator loss. Some special image seems give up by generator
+![](image/2021-01-30-11-11-37.png)
